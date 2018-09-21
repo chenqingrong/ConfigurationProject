@@ -1,0 +1,89 @@
+AcceptFilter**Configures optimizations for a Protocol's Listener Sockets**N/A
+AcceptPathInfo**Resources accept trailing pathname information**AcceptPathInfo Default
+AccessFileName**Name of the distributed configuration file**AccessFileName .htaccess
+AddDefaultCharset**Default charset parameter to be added when a response content-type is text/plain or text/html**AddDefaultCharset Off
+AllowEncodedSlashes**Determines whether encoded path separators in URLs are allowed to be passed through**AllowEncodedSlashes Off
+AllowOverride**Types of directives that are allowed in .htaccess files**AllowOverride None (2.3.9 and later), AllowOverride All (2.3.8 and earlier)
+AllowOverrideList**Individual directives that are allowed in .htaccess files**AllowOverrideList None
+CGIMapExtension**Technique for locating the interpreter for CGI scripts**N/A
+CGIPassAuth**Enables passing HTTP authorization headers to scripts as CGI variables**CGIPassAuth Off
+CGIVar**Controls how some CGI variables are set**N/A
+ContentDigest**Enables the generation of Content-MD5 HTTP Response headers**ContentDigest Off
+DefaultRuntimeDir**Base directory for the server run-time files**DefaultRuntimeDir DEFAULT_REL_RUNTIMEDIR (logs/)
+DefaultType**This directive has no effect other than to emit warnings if the value is not none. In prior versions, DefaultType would specify a default media type to assign to response content for which no other media type configuration could be found. **DefaultType none
+Define**Define a variable**N/A
+<Directory>**Enclose a group of directives that apply only to the named file-system directory, sub-directories, and their contents.**N/A
+<DirectoryMatch>**Enclose directives that apply to the contents of file-system directories matching a regular expression.**N/A
+DocumentRoot**Directory that forms the main document tree visible from the web**DocumentRoot "/usr/local/apache/htdocs"
+<Else>**Contains directives that apply only if the condition of a previous <If> or <ElseIf> section is not satisfied by a request at runtime**N/A
+<ElseIf>**Contains directives that apply only if a condition is satisfied by a request at runtime while the condition of a previous <If> or <ElseIf> section is not satisfied**N/A
+EnableMMAP**Use memory-mapping to read files during delivery**EnableMMAP On
+EnableSendfile**Use the kernel sendfile support to deliver files to the client**EnableSendfile Off
+Error**Abort configuration parsing with a custom error message**N/A
+ErrorDocument**What the server will return to the client in case of an error**N/A
+ErrorLog**Location where the server will log errors**ErrorLog logs/error_log (Unix) ErrorLog logs/error.log (Windows and OS/2)
+ErrorLogFormat**Format specification for error log entries**N/A
+ExtendedStatus**Keep track of extended status information for each request**ExtendedStatus Off[*]
+FileETag**File attributes used to create the ETag HTTP response header for static files**FileETag MTime Size
+<Files>**Contains directives that apply to matched filenames**N/A
+<FilesMatch>**Contains directives that apply to regular-expression matched filenames**N/A
+ForceType**Forces all matching files to be served with the specified media type in the HTTP Content-Type header field**N/A
+GprofDir**Directory to write gmon.out profiling data to.  **N/A
+HostnameLookups**Enables DNS lookups on client IP addresses**HostnameLookups Off
+HttpProtocolOptions**Modify restrictions on HTTP Request Messages**HttpProtocolOptions Strict LenientMethods Allow0.9
+<If>**Contains directives that apply only if a condition is satisfied by a request at runtime**N/A
+<IfDefine>**Encloses directives that will be processed only if a test is true at startup**N/A
+<IfDirective>**Encloses directives that are processed conditional on the presence or absence of a specific directive**N/A
+<IfFile>**Encloses directives that will be processed only if file exists at startup**N/A
+<IfModule>**Encloses directives that are processed conditional on the presence or absence of a specific module**N/A
+<IfSection>**Encloses directives that are processed conditional on the presence or absence of a specific section directive**N/A
+Include**Includes other configuration files from within the server configuration files**N/A
+IncludeOptional**Includes other configuration files from within the server configuration files**N/A
+KeepAlive**Enables HTTP persistent connections**KeepAlive On
+KeepAliveTimeout**Amount of time the server will wait for subsequent requests on a persistent connection**KeepAliveTimeout 5
+<Limit>**Restrict enclosed access controls to only certain HTTP methods**N/A
+<LimitExcept>**Restrict access controls to all HTTP methods except the named ones**N/A
+LimitInternalRecursion**Determine maximum number of internal redirects and nested subrequests**LimitInternalRecursion 10
+LimitRequestBody**Restricts the total size of the HTTP request body sent from the client**LimitRequestBody 0
+LimitRequestFields**Limits the number of HTTP request header fields that will be accepted from the client**LimitRequestFields 100
+LimitRequestFieldSize**Limits the size of the HTTP request header allowed from the client**LimitRequestFieldSize 8190
+LimitRequestLine**Limit the size of the HTTP request line that will be accepted from the client**LimitRequestLine 8190
+LimitXMLRequestBody**Limits the size of an XML-based request body**LimitXMLRequestBody 1000000
+<Location>**Applies the enclosed directives only to matching URLs**N/A
+<LocationMatch>**Applies the enclosed directives only to regular-expression matching URLs**N/A
+LogLevel**Controls the verbosity of the ErrorLog**LogLevel warn
+MaxKeepAliveRequests**Number of requests allowed on a persistent connection**MaxKeepAliveRequests 100
+MaxRangeOverlaps**Number of overlapping ranges (eg: 100-200,150-300) allowed before returning the complete         resource **MaxRangeOverlaps 20
+MaxRangeReversals**Number of range reversals (eg: 100-200,50-70) allowed before returning the complete         resource **MaxRangeReversals 20
+MaxRanges**Number of ranges allowed before returning the complete resource **MaxRanges 200
+MergeTrailers**Determines whether trailers are merged into headers**MergeTrailers off
+Mutex**Configures mutex mechanism and lock file directory for all or specified mutexes**Mutex default
+NameVirtualHost**DEPRECATED: Designates an IP address for name-virtual hosting**N/A
+Options**Configures what features are available in a particular directory**Options FollowSymlinks
+Protocol**Protocol for a listening socket**N/A
+Protocols**Protocols available for a server/virtual host**Protocols http/1.1
+ProtocolsHonorOrder**Determines if order of Protocols determines precedence during negotiation**ProtocolsHonorOrder On
+QualifyRedirectURL**Controls whether the REDIRECT_URL environment variable is              fully qualified**QualifyRedirectURL OFF
+RegexDefaultOptions**Allow to configure global/default options for regexes**RegexDefaultOptions DOLLAR_ENDONLY
+RegisterHttpMethod**Register non-standard HTTP methods**N/A
+RLimitCPU**Limits the CPU consumption of processes launched by Apache httpd children**Unset; uses operating system defaults
+RLimitMEM**Limits the memory consumption of processes launched by Apache httpd children**Unset; uses operating system defaults
+RLimitNPROC**Limits the number of processes that can be launched by processes launched by Apache httpd children**Unset; uses operating system defaults
+ScriptInterpreterSource**Technique for locating the interpreter for CGI scripts**ScriptInterpreterSource Script
+SeeRequestTail**Determine if mod_status displays the first 63 characters of a request or the last 63, assuming the request itself is greater than 63 chars.**SeeRequestTail Off
+ServerAdmin**Email address that the server includes in error messages sent to the client**N/A
+ServerAlias**Alternate names for a host used when matching requests to name-virtual hosts**N/A
+ServerName**Hostname and port that the server uses to identify itself**N/A
+ServerPath**Legacy URL pathname for a name-based virtual host that is accessed by an incompatible browser**N/A
+ServerRoot**Base directory for the server installation**ServerRoot /usr/local/apache
+ServerSignature**Configures the footer on server-generated documents**ServerSignature Off
+ServerTokens**Configures the Server HTTP response header**ServerTokens Full
+SetHandler**Forces all matching files to be processed by a handler**N/A
+SetInputFilter**Sets the filters that will process client requests and POST input**N/A
+SetOutputFilter**Sets the filters that will process responses from the server**N/A
+TimeOut**Amount of time the server will wait for certain events before failing a request**TimeOut 60
+TraceEnable**Determines the behavior on TRACE requests**TraceEnable on
+UnDefine**Undefine the existence of a variable**N/A
+UseCanonicalName**Configures how the server determines its own name and port**UseCanonicalName Off
+UseCanonicalPhysicalPort**Configures how the server determines its own port**UseCanonicalPhysicalPort Off
+<VirtualHost>**Contains directives that apply only to a specific hostname or IP address**N/A
