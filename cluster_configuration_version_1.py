@@ -14,7 +14,7 @@ def read_corpus(fname,tokens_only=False):
 			if tokens_only:
 				yield gensim.utils.simple_preprocess(line.split('**')[1])
 			else:
-				yield gensim.models.doc2vec.TaggedDocument(gensim.utils.simple_preprocess(line),[i])
+				yield gensim.models.doc2vec.TaggedDocument(gensim.utils.simple_preprocess(line.split('**')[1]),[i])
 
 #build and train the models
 list_of_file=["apache-configuration","hdfs-configuration","mysql-configuration","php-configuration"]
