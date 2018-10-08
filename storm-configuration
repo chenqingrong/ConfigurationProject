@@ -1,0 +1,304 @@
+BACKPRESSURE_DISRUPTOR_HIGH_WATERMARK**This signifies the tuple congestion in a disruptor queue.**N/A
+BACKPRESSURE_DISRUPTOR_LOW_WATERMARK**This signifies a state that a disruptor queue has left the congestion.**N/A
+BLOBSTORE_CLEANUP_ENABLE**Enable the blobstore cleaner.**N/A
+BLOBSTORE_DIR**What directory to use for the blobstore.**N/A
+BLOBSTORE_HDFS_KEYTAB**keytab for nimbus/supervisor to use to access secure hdfs for the blobstore.**N/A
+BLOBSTORE_HDFS_PRINCIPAL**principal for nimbus/supervisor to use to access secure hdfs for the blobstore.**N/A
+BLOBSTORE_SUPERUSER**The blobstore super user has all read/write/admin permissions to all blobs - user running the blobstore.**N/A
+CLIENT_BLOBSTORE**What blobstore implementation the storm client should use.**N/A
+CLIENT_JAR_TRANSFORMER**An implementation of @{link org.apache.storm.daemon.JarTransformer} that will can be used to transform a jar file before storm jar runs with it.**N/A
+DEV_ZOOKEEPER_PATH**The path to use as the zookeeper dir when running a zookeeper server via  storm dev-zookeeper .**N/A
+DISABLE_SYMLINKS**On some systems (windows for example) symlinks require special privileges that not everyone wants to grant a headless user.**N/A
+DRPC_AUTHORIZER**Class name for authorization plugin for DRPC client**N/A
+DRPC_AUTHORIZER_ACL**The Access Control List for the DRPC Authorizer.**N/A
+DRPC_AUTHORIZER_ACL_FILENAME**File name of the DRPC Authorizer ACL.**N/A
+DRPC_AUTHORIZER_ACL_STRICT**Whether the DRPCSimpleAclAuthorizer should deny requests for operations involving functions that have no explicit ACL entry.**N/A
+DRPC_CHILDOPTS**Childopts for Storm DRPC Java process.**N/A
+DRPC_HTTP_CREDS_PLUGIN**Class name of the HTTP credentials plugin for DRPC.**N/A
+DRPC_HTTP_FILTER**A class implementing javax.servlet.Filter for DRPC HTTP requests**N/A
+DRPC_HTTP_FILTER_PARAMS**Initialization parameters for the javax.servlet.Filter of the DRPC HTTP service**N/A
+DRPC_HTTP_PORT**This port is used by Storm DRPC for receiving HTTP DPRC requests from clients.**N/A
+DRPC_HTTPS_KEY_PASSWORD**Password to the private key in the keystore for setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_KEYSTORE_PASSWORD**Password to the keystore used by Storm DRPC for setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_KEYSTORE_PATH**Path to the keystore used by Storm DRPC for setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_KEYSTORE_TYPE**Type of keystore used by Storm DRPC for setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_NEED_CLIENT_AUTH**N/A**N/A
+DRPC_HTTPS_PORT**This port is used by Storm DRPC for receiving HTTPS (SSL) DPRC requests from clients.**N/A
+DRPC_HTTPS_TRUSTSTORE_PASSWORD**Password to the truststore used by Storm DRPC setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_TRUSTSTORE_PATH**Path to the truststore used by Storm DRPC setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_TRUSTSTORE_TYPE**Type of truststore used by Storm DRPC for setting up HTTPS (SSL).**N/A
+DRPC_HTTPS_WANT_CLIENT_AUTH**Password to the truststore used by Storm DRPC setting up HTTPS (SSL).**N/A
+DRPC_INVOCATIONS_PORT**This port on Storm DRPC is used by DRPC topologies to receive function invocations and send results back.**N/A
+DRPC_INVOCATIONS_THREADS**DRPC invocations thrift server worker threads**N/A
+DRPC_INVOCATIONS_THRIFT_TRANSPORT_PLUGIN**The DRPC invocations transport plug-in for Thrift client/server communication**N/A
+DRPC_MAX_BUFFER_SIZE**Deprecated. As SimpleTrasportPlugin is deprecated, no other thrift transport plugin uses this configuration. **N/A
+DRPC_PORT**This port is used by Storm DRPC for receiving DPRC requests from clients.**N/A
+DRPC_QUEUE_SIZE**DRPC thrift server queue size**N/A
+DRPC_REQUEST_TIMEOUT_SECS**The timeout on DRPC requests within the DRPC server.**N/A
+DRPC_SERVERS**List of DRPC servers so that the DRPCSpout knows who to talk to.**N/A
+DRPC_THRIFT_TRANSPORT_PLUGIN**The DRPC transport plug-in for Thrift client/server communication**N/A
+DRPC_WORKER_THREADS**DRPC thrift server worker threads**N/A
+ISOLATION_SCHEDULER_MACHINES**A map from topology name to the number of machines that should be dedicated for that topology.**N/A
+JAVA_LIBRARY_PATH**This value is passed to spawned JVMs (e.g., Nimbus, Supervisor, and Workers) for the java.library.path value.**N/A
+LOGS_GROUPS**A list of groups allowed to view logs via the Log Viewer**N/A
+LOGS_USERS**A list of users allowed to view logs via the Log Viewer**N/A
+LOGVIEWER_APPENDER_NAME**Appender name used by log viewer to determine log directory.**N/A
+LOGVIEWER_CHILDOPTS**Childopts for log viewer java process.**N/A
+LOGVIEWER_CLEANUP_AGE_MINS**How many minutes since a log was last modified for the log to be considered for clean-up**N/A
+LOGVIEWER_CLEANUP_INTERVAL_SECS**How often to clean up old log files**N/A
+LOGVIEWER_HTTPS_KEY_PASSWORD**Password to the private key in the keystore for setting up HTTPS (SSL).**N/A
+LOGVIEWER_HTTPS_KEYSTORE_PASSWORD**Password for the keystore for HTTPS for Storm Logviewer**N/A
+LOGVIEWER_HTTPS_KEYSTORE_PATH**Path to the keystore containing the certs used by Storm Logviewer for HTTPS communications**N/A
+LOGVIEWER_HTTPS_KEYSTORE_TYPE**Type of the keystore for HTTPS for Storm Logviewer.**N/A
+LOGVIEWER_HTTPS_NEED_CLIENT_AUTH**N/A**N/A
+LOGVIEWER_HTTPS_PORT**Storm Logviewer HTTPS port**N/A
+LOGVIEWER_HTTPS_TRUSTSTORE_PASSWORD**Password for the truststore for HTTPS for Storm Logviewer**N/A
+LOGVIEWER_HTTPS_TRUSTSTORE_PATH**Path to the truststore containing the certs used by Storm Logviewer for HTTPS communications**N/A
+LOGVIEWER_HTTPS_TRUSTSTORE_TYPE**Type of the truststore for HTTPS for Storm Logviewer.**N/A
+LOGVIEWER_HTTPS_WANT_CLIENT_AUTH**Password to the truststore used by Storm Logviewer setting up HTTPS (SSL).**N/A
+LOGVIEWER_MAX_PER_WORKER_LOGS_SIZE_MB**The maximum number of bytes per workers files can take up in MB**N/A
+LOGVIEWER_MAX_SUM_WORKER_LOGS_SIZE_MB**The maximum number of bytes all worker log files can take up in MB**N/A
+LOGVIEWER_PORT**HTTP UI port for log viewer**N/A
+MULTITENANT_SCHEDULER_USER_POOLS**A map from the user name to the number of machines that should that user is allowed to use.**N/A
+NIMBUS_ADMINS**A list of users that are cluster admins and can run any command.**N/A
+NIMBUS_AUTHORIZER**Class name for authorization plugin for Nimbus**N/A
+NIMBUS_AUTO_CRED_PLUGINS**A list of plugins that nimbus should load during submit topology to populate credentials on users behalf.**N/A
+NIMBUS_BLOBSTORE**What blobstore implementation nimbus should use.**N/A
+NIMBUS_BLOBSTORE_EXPIRATION_SECS**During operations with the blob store, via master, how long a connection is idle before nimbus considers it dead and drops the session and any associated connections.**N/A
+NIMBUS_CHILDOPTS**This parameter is used by the storm-deploy project to configure the jvm options for the nimbus daemon.**N/A
+NIMBUS_CLEANUP_INBOX_FREQ_SECS**How often nimbus should wake the cleanup thread to clean the inbox.**N/A
+NIMBUS_CODE_SYNC_FREQ_SECS**How often nimbuss background thread to sync code for missing topologies should run.**N/A
+NIMBUS_CREDENTIAL_RENEW_FREQ_SECS**How often nimbus should wake up to renew credentials if needed.**N/A
+NIMBUS_CREDENTIAL_RENEWERS**A list of credential renewers that nimbus should load.**N/A
+NIMBUS_DAEMON_USER**This is the user that the Nimbus daemon process is running as.**N/A
+NIMBUS_EXECUTORS_PER_TOPOLOGY**A number representing the maximum number of executors any single topology can acquire.**N/A
+NIMBUS_FILE_COPY_EXPIRATION_SECS**During upload/download with the master, how long an upload or download connection is idle before nimbus considers it dead and drops the connection.**N/A
+NIMBUS_GROUPS**A list of groups , users belong to these groups are the only ones allowed to run user operation on storm cluster.**N/A
+NIMBUS_HOST**Deprecated.**N/A
+NIMBUS_IMPERSONATION_ACL**Impersonation user ACL config entries.**N/A
+NIMBUS_IMPERSONATION_AUTHORIZER**Impersonation user ACL config entries.**N/A
+NIMBUS_INBOX_JAR_EXPIRATION_SECS**The length of time a jar file lives in the inbox before being deleted by the cleanup thread.**N/A
+NIMBUS_MONITOR_FREQ_SECS**How often nimbus should wake up to check heartbeats and do reassignments.**N/A
+NIMBUS_QUEUE_SIZE**Nimbus thrift server queue size, default is 100000.**N/A
+NIMBUS_SEEDS**List of seed nimbus hosts to use for leader nimbus discovery.**N/A
+NIMBUS_SLOTS_PER_TOPOLOGY**A number representing the maximum number of workers any single topology can acquire.**N/A
+NIMBUS_SUPERVISOR_TIMEOUT_SECS**How long before a supervisor can go without heartbeating before nimbus considers it dead and stops assigning new work to it.**N/A
+NIMBUS_SUPERVISOR_USERS**A list of users that run the supervisors and should be authorized to interact with nimbus as a supervisor would.**N/A
+NIMBUS_TASK_LAUNCH_SECS**A special timeout used when a task is initially launched.**N/A
+NIMBUS_TASK_TIMEOUT_SECS**How long without heartbeating a task can go before nimbus will consider the task dead and reassign it to another location.**N/A
+NIMBUS_THRIFT_MAX_BUFFER_SIZE**Deprecated. As SimpleTrasportPlugin is deprecated, no other thrift transport plugin uses this configuration. **N/A
+NIMBUS_THRIFT_PORT**Which port the Thrift interface of Nimbus should run on.**N/A
+NIMBUS_THRIFT_THREADS**The number of threads that should be used by the nimbus thrift server.**N/A
+NIMBUS_THRIFT_TRANSPORT_PLUGIN**The Nimbus transport plug-in for Thrift client/server communication**N/A
+NIMBUS_TOPOLOGY_ACTION_NOTIFIER_PLUGIN**FQCN of a class that implements I @see org.apache.storm.nimbus.ITopologyActionNotifierPlugin for details.**N/A
+NIMBUS_TOPOLOGY_ACTION_NOTIFIER_PLUGIN_SCHEMA**N/A**N/A
+NIMBUS_TOPOLOGY_VALIDATOR**A custom class that implements ITopologyValidator that is run whenever a topology is submitted.**N/A
+NIMBUS_USERS**A list of users that are the only ones allowed to run user operation on storm cluster.**N/A
+PACEMAKER_AUTH_METHOD**This should be one of  DIGEST ,  KERBEROS , or  NONE  Determines the mode of authentication the pacemaker server and client use.**N/A
+PACEMAKER_CHILDOPTS**This parameter is used by the storm-deploy project to configure the jvm options for the pacemaker daemon.**N/A
+PACEMAKER_HOST**The host that Pacemaker is running on.**N/A
+PACEMAKER_MAX_THREADS**The maximum number of threads that should be used by the Pacemaker.**N/A
+PACEMAKER_PORT**The port Pacemaker should run on.**N/A
+RESOURCE_AWARE_SCHEDULER_EVICTION_STRATEGY**The class that specifies the eviction strategy to use in ResourceAwareScheduler**N/A
+RESOURCE_AWARE_SCHEDULER_PRIORITY_STRATEGY**the class that specifies the scheduling priority strategy to use in ResourceAwareScheduler**N/A
+RESOURCE_AWARE_SCHEDULER_USER_POOLS**A map of users to another map of the resource guarantees of the user.**N/A
+SCHEDULER_DISPLAY_RESOURCE**Whether we want to display all the resource capacity and scheduled usage on the UI page.**N/A
+STORM_BLOBSTORE_ACL_VALIDATION_ENABLED**For secure mode we would want to turn on this config  By default this is turned off assuming the default is insecure**N/A
+STORM_BLOBSTORE_INPUTSTREAM_BUFFER_SIZE_BYTES**What buffer size to use for the blobstore uploads.**N/A
+STORM_BLOBSTORE_REPLICATION_FACTOR**Set replication factor for a blob in HDFS Blobstore Implementation**N/A
+STORM_CLUSTER_MODE**The mode this Storm cluster is running in.**N/A
+STORM_CLUSTER_STATE_STORE**The ClusterState factory that worker will use to create a ClusterState to store state in.**N/A
+STORM_DAEMON_METRICS_REPORTER_CSV_LOG_DIR**A specify csv reporter directory for CvsPreparableReporter daemon metrics reporter.**N/A
+STORM_DAEMON_METRICS_REPORTER_PLUGIN_DOMAIN**A specify domain for daemon metrics reporter plugin to limit reporting to specific domain.**N/A
+STORM_DAEMON_METRICS_REPORTER_PLUGIN_DURATION_UNIT**A specify duration-unit in TimeUnit to specify reporting window for daemon metrics reporter plugin.**N/A
+STORM_DAEMON_METRICS_REPORTER_PLUGIN_LOCALE**A specify Locale for daemon metrics reporter plugin.**N/A
+STORM_DAEMON_METRICS_REPORTER_PLUGIN_RATE_UNIT**A specify rate-unit in TimeUnit to specify reporting frequency for daemon metrics reporter plugin.**N/A
+STORM_DAEMON_METRICS_REPORTER_PLUGINS**A list of daemon metrics reporter plugin class names.**N/A
+STORM_DO_AS_USER**The user as which the nimbus client should be acquired to perform the operation.**N/A
+STORM_EXHIBITOR_POLL**How often to poll Exhibitor cluster in millis.**N/A
+STORM_EXHIBITOR_PORT**The port Storm will use to connect to each of the exhibitor servers.**N/A
+STORM_EXHIBITOR_RETRY_INTERVAL**The interval between retries of an Exhibitor operation.**N/A
+STORM_EXHIBITOR_RETRY_INTERVAL_CEILING**The ceiling of the interval between retries of an Exhibitor operation.**N/A
+STORM_EXHIBITOR_RETRY_TIMES**The number of times to retry an Exhibitor operation.**N/A
+STORM_EXHIBITOR_SERVERS**A list of hosts of Exhibitor servers used to discover/maintain connection to ZooKeeper cluster.**N/A
+STORM_EXHIBITOR_URIPATH**N/A**N/A
+STORM_GROUP_MAPPING_SERVICE_CACHE_DURATION_SECS**Max no.of seconds group mapping service will cache user groups**N/A
+STORM_GROUP_MAPPING_SERVICE_PARAMS**Initialization parameters for the group mapping service plugin.**N/A
+STORM_GROUP_MAPPING_SERVICE_PROVIDER_PLUGIN**The plugin that will provide user groups service**N/A
+STORM_HEALTH_CHECK_DIR**The directory where storms health scripts go.**N/A
+STORM_HEALTH_CHECK_TIMEOUT_MS**The time to allow any given healthcheck script to run before it is marked failed due to timeout**N/A
+STORM_ID**The id assigned to a running topology.**N/A
+STORM_LOCAL_DIR**A directory on the local filesystem used by Storm for any local filesystem usage it needs.**N/A
+STORM_LOCAL_HOSTNAME**The hostname the supervisors/workers should report to nimbus.**N/A
+STORM_LOCAL_MODE_ZMQ**Whether or not to use ZeroMQ for messaging in local mode.**N/A
+STORM_LOG4J2_CONF_DIR**A directory that holds configuration files for log4j2.**N/A
+STORM_MESSAGING_NETTY_AUTHENTICATION**Netty based messaging: Is authentication required for Netty messaging from client worker process to server worker process.**N/A
+STORM_MESSAGING_NETTY_BUFFER_SIZE**Netty based messaging: The buffer size for send/recv buffer**N/A
+STORM_MESSAGING_NETTY_CLIENT_WORKER_THREADS**Netty based messaging: The # of worker threads for the client.**N/A
+STORM_MESSAGING_NETTY_MAX_RETRIES**Deprecated. "Since netty clients should never stop reconnecting - this does not make sense anymore. **N/A
+STORM_MESSAGING_NETTY_MAX_SLEEP_MS**Netty based messaging: The max # of milliseconds that a peer will wait.**N/A
+STORM_MESSAGING_NETTY_MIN_SLEEP_MS**Netty based messaging: The min # of milliseconds that a peer will wait.**N/A
+STORM_MESSAGING_NETTY_SERVER_WORKER_THREADS**Netty based messaging: The # of worker threads for the server.**N/A
+STORM_MESSAGING_NETTY_SOCKET_BACKLOG**Netty based messaging: Sets the backlog value to specify when the channel binds to a local address**N/A
+STORM_MESSAGING_TRANSPORT**The transporter for communication among Storm tasks**N/A
+STORM_META_SERIALIZATION_DELEGATE**The delegate for serializing metadata, should be used for serialized objects stored in zookeeper and on disk.**N/A
+STORM_NETTY_FLUSH_CHECK_INTERVAL_MS**We check with this interval that whether the Netty channel is writable and try to write pending messages**N/A
+STORM_NETTY_MESSAGE_BATCH_SIZE**If the Netty messaging layer is busy, the Netty client will try to batch message as more as possible up to the size of STORM_NETTY_MESSAGE_BATCH_SIZE bytes**N/A
+STORM_NETWORK_TOPOGRAPHY_PLUGIN**What Network Topography detection classes should we use.**N/A
+STORM_NIMBUS_RETRY_INTERVAL**The starting interval between exponential backoff retries of a Nimbus operation.**N/A
+STORM_NIMBUS_RETRY_INTERVAL_CEILING**The ceiling of the interval between retries of a client connect to Nimbus operation.**N/A
+STORM_NIMBUS_RETRY_TIMES**The number of times to retry a Nimbus operation.**N/A
+STORM_PRINCIPAL_TO_LOCAL_PLUGIN**The plugin that will convert a principal to a local user.**N/A
+STORM_SCHEDULER**A global task scheduler used to assign topologiess tasks to supervisors workers.**N/A
+STORM_THRIFT_TRANSPORT_PLUGIN**The default transport plug-in for Thrift client/server communication**N/A
+STORM_TOPOLOGY_SUBMISSION_NOTIFIER_PLUGIN**FQCN of a class that implements ISubmitterHook @see ISubmitterHook for details.**N/A
+STORM_WORKERS_ARTIFACTS_DIR**The workers-artifacts directory (where we place all workers logs), can be either absolute or relative.**N/A
+STORM_ZOOKEEPER_AUTH_PAYLOAD**A string representing the payload for cluster Zookeeper authentication.**N/A
+STORM_ZOOKEEPER_AUTH_SCHEME**The cluster Zookeeper authentication scheme to use, e.g.**N/A
+STORM_ZOOKEEPER_CONNECTION_TIMEOUT**The connection timeout for clients to ZooKeeper.**N/A
+STORM_ZOOKEEPER_PORT**The port Storm will use to connect to each of the ZooKeeper servers.**N/A
+STORM_ZOOKEEPER_RETRY_INTERVAL**The interval between retries of a Zookeeper operation.**N/A
+STORM_ZOOKEEPER_RETRY_INTERVAL_CEILING**The ceiling of the interval between retries of a Zookeeper operation.**N/A
+STORM_ZOOKEEPER_RETRY_TIMES**The number of times to retry a Zookeeper operation.**N/A
+STORM_ZOOKEEPER_ROOT**The root location at which Storm stores data in ZooKeeper.**N/A
+STORM_ZOOKEEPER_SERVERS**A list of hosts of ZooKeeper servers used to manage the cluster.**N/A
+STORM_ZOOKEEPER_SESSION_TIMEOUT**The session timeout for clients to ZooKeeper.**N/A
+STORM_ZOOKEEPER_SUPERACL**This is part of a temporary workaround to a ZK bug, it is the scheme:acl for the user Nimbus and Supervisors use to authenticate with ZK.**N/A
+STORM_ZOOKEEPER_TOPOLOGY_AUTH_PAYLOAD**A string representing the payload for topology Zookeeper authentication.**N/A
+STORM_ZOOKEEPER_TOPOLOGY_AUTH_SCHEME**The topology Zookeeper authentication scheme to use, e.g.**N/A
+SUPERVISOR_BLOBSTORE**What blobstore implementation the supervisor should use.**N/A
+SUPERVISOR_BLOBSTORE_DOWNLOAD_MAX_RETRIES**Maximum number of retries a supervisor is allowed to make for downloading a blob.**N/A
+SUPERVISOR_BLOBSTORE_DOWNLOAD_THREAD_COUNT**What blobstore download parallelism the supervisor should use.**N/A
+SUPERVISOR_CHILDOPTS**This parameter is used by the storm-deploy project to configure the jvm options for the supervisor daemon.**N/A
+SUPERVISOR_CPU_CAPACITY**The total amount of CPU resources a supervisor is allowed to give to its workers.**N/A
+SUPERVISOR_ENABLE**Whether or not the supervisor should launch workers assigned to it.**N/A
+SUPERVISOR_HEARTBEAT_FREQUENCY_SECS**how often the supervisor sends a heartbeat to the master.**N/A
+SUPERVISOR_LOCALIZER_CACHE_CLEANUP_INTERVAL_MS**The distributed cache cleanup interval.**N/A
+SUPERVISOR_LOCALIZER_CACHE_TARGET_SIZE_MB**The distributed cache target size in MB.**N/A
+SUPERVISOR_MEMORY_CAPACITY_MB**The total amount of memory (in MiB) a supervisor is allowed to give to its workers.**N/A
+SUPERVISOR_MONITOR_FREQUENCY_SECS**How often the supervisor checks the worker heartbeats to see if any of them need to be restarted.**N/A
+SUPERVISOR_RUN_WORKER_AS_USER**Should the supervior try to run the worker as the lauching user or not.**N/A
+SUPERVISOR_SCHEDULER_META**the metadata configured on the supervisor**N/A
+SUPERVISOR_SLOTS_PORTS**A list of ports that can run workers on this supervisor.**N/A
+SUPERVISOR_WORKER_LAUNCHER**Full path to the worker-laucher executable that will be used to lauch workers when SUPERVISOR_RUN_WORKER_AS_USER is set to true.**N/A
+SUPERVISOR_WORKER_SHUTDOWN_SLEEP_SECS**How many seconds to sleep for before shutting down threads on worker**N/A
+SUPERVISOR_WORKER_START_TIMEOUT_SECS**How long a worker can go without heartbeating during the initial launch before the supervisor tries to restart the worker process.**N/A
+SUPERVISOR_WORKER_TIMEOUT_SECS**How long a worker can go without heartbeating before the supervisor tries to restart the worker process.**N/A
+TASK_BACKPRESSURE_POLL_SECS**How often to poll for changed topology backpressure flag from ZK**N/A
+TASK_CREDENTIALS_POLL_SECS**How often a task should sync credentials, worst case.**N/A
+TASK_HEARTBEAT_FREQUENCY_SECS**How often a task should heartbeat its status to the master.**N/A
+TASK_REFRESH_POLL_SECS**How often a task should sync its connections with other tasks (if a task is reassigned, the other tasks sending messages to it need to refresh their connections).**N/A
+TOPOLOGY_ACKER_EXECUTORS**How many executors to spawn for ackers.**N/A
+TOPOLOGY_AUTO_CREDENTIALS**A list of IAutoCredentials that the topology should load and use.**N/A
+TOPOLOGY_AUTO_TASK_HOOKS**A list of task hooks that are automatically added to every spout and bolt in the topology.**N/A
+TOPOLOGY_BACKPRESSURE_ENABLE**Whether to enable backpressure in for a certain topology**N/A
+TOPOLOGY_BLOBSTORE_MAP**A map with blobstore keys mapped to each filename the worker will have access to in the launch directory to the blob by local file name and uncompress flag.**N/A
+TOPOLOGY_BOLTS_MESSAGE_ID_FIELD_NAME**N/A**N/A
+TOPOLOGY_BOLTS_OUTGOING_OVERFLOW_BUFFER_ENABLE**N/A**N/A
+TOPOLOGY_BOLTS_SLIDING_INTERVAL_COUNT**N/A**N/A
+TOPOLOGY_BOLTS_SLIDING_INTERVAL_DURATION_MS**N/A**N/A
+TOPOLOGY_BOLTS_TUPLE_TIMESTAMP_FIELD_NAME**N/A**N/A
+TOPOLOGY_BOLTS_TUPLE_TIMESTAMP_MAX_LAG_MS**N/A**N/A
+TOPOLOGY_BOLTS_WATERMARK_EVENT_INTERVAL_MS**N/A**N/A
+TOPOLOGY_BOLTS_WINDOW_LENGTH_COUNT**N/A**N/A
+TOPOLOGY_BOLTS_WINDOW_LENGTH_DURATION_MS**N/A**N/A
+TOPOLOGY_BUILTIN_METRICS_BUCKET_SIZE_SECS**The time period that builtin metrics data in bucketed into.**N/A
+TOPOLOGY_CLASSPATH**Topology-specific classpath for the worker child process.**N/A
+TOPOLOGY_COMPONENT_CPU_PCORE_PERCENT**The config indicates the percentage of cpu for a core an instance(executor) of a component will use.**N/A
+TOPOLOGY_COMPONENT_RESOURCES_OFFHEAP_MEMORY_MB**The maximum amount of memory an instance of a spout/bolt will take off heap.**N/A
+TOPOLOGY_COMPONENT_RESOURCES_ONHEAP_MEMORY_MB**The maximum amount of memory an instance of a spout/bolt will take on heap.**N/A
+TOPOLOGY_DEBUG**When set to true, Storm will log every message thats emitted.**N/A
+TOPOLOGY_DISABLE_LOADAWARE_MESSAGING**Disable load aware grouping support.**N/A
+TOPOLOGY_DISRUPTOR_BATCH_SIZE**The number of tuples to batch before sending to the next thread.**N/A
+TOPOLOGY_DISRUPTOR_BATCH_TIMEOUT_MILLIS**The maximum age in milliseconds a batch can be before being sent to the next thread.**N/A
+TOPOLOGY_DISRUPTOR_WAIT_STRATEGY**Deprecated. this is no longer supported Configure the wait strategy used for internal queuing. Can be used to tradeoff latency vs. throughput **N/A
+TOPOLOGY_DISRUPTOR_WAIT_TIMEOUT_MILLIS**Configure timeout milliseconds used for disruptor queue wait strategy.**N/A
+TOPOLOGY_ENABLE_MESSAGE_TIMEOUTS**True if Storm should timeout messages or not.**N/A
+TOPOLOGY_ENVIRONMENT**Topology-specific environment variables for the worker child process.**N/A
+TOPOLOGY_ERROR_THROTTLE_INTERVAL_SECS**The interval in seconds to use for determining whether to throttle error reported to Zookeeper.**N/A
+TOPOLOGY_EVENTLOGGER_EXECUTORS**How many executors to spawn for event logger.**N/A
+TOPOLOGY_EXECUTOR_RECEIVE_BUFFER_SIZE**The size of the Disruptor receive queue for each executor.**N/A
+TOPOLOGY_EXECUTOR_SEND_BUFFER_SIZE**The size of the Disruptor send queue for each executor.**N/A
+TOPOLOGY_FALL_BACK_ON_JAVA_SERIALIZATION**Whether or not to use Java serialization in a topology.**N/A
+TOPOLOGY_GROUPS**A list of groups that are allowed to interact with the topology.**N/A
+TOPOLOGY_ISOLATED_MACHINES**The number of machines that should be used by this topology to isolate it from all others.**N/A
+TOPOLOGY_KRYO_DECORATORS**A list of classes that customize storms kryo instance during start-up.**N/A
+TOPOLOGY_KRYO_FACTORY**Class that specifies how to create a Kryo instance for serialization.**N/A
+TOPOLOGY_KRYO_REGISTER**A list of serialization registrations for Kryo ( https://github.com/EsotericSoftware/kryo ), the underlying serialization framework for Storm.**N/A
+TOPOLOGY_LOGGING_SENSITIVITY**Topology central logging sensitivity to determine who has access to logs in central logging system.**N/A
+TOPOLOGY_MAX_ERROR_REPORT_PER_INTERVAL**See doc for TOPOLOGY_ERROR_THROTTLE_INTERVAL_SECS**N/A
+TOPOLOGY_MAX_REPLICATION_WAIT_TIME_SEC**Maximum wait time for the nimbus host replication to achieve the nimbus.min.replication.count.**N/A
+TOPOLOGY_MAX_SPOUT_PENDING**The maximum number of tuples that can be pending on a spout task at any given time.**N/A
+TOPOLOGY_MAX_TASK_PARALLELISM**The maximum parallelism allowed for a component in this topology.**N/A
+TOPOLOGY_MESSAGE_TIMEOUT_SECS**The maximum amount of time given to the topology to fully process a message emitted by a spout.**N/A
+TOPOLOGY_METRICS_CONSUMER_REGISTER**A list of classes implementing IMetricsConsumer (See storm.yaml.example for exact config format).**N/A
+TOPOLOGY_MIN_REPLICATION_COUNT**Minimum number of nimbus hosts where the code must be replicated before leader nimbus is allowed to perform topology activation tasks like setting up heartbeats/assignments and marking the topology as active.**N/A
+TOPOLOGY_MULTILANG_SERIALIZER**The serializer for communication between shell components and non-JVM processes**N/A
+TOPOLOGY_NAME**Name of the topology.**N/A
+TOPOLOGY_PRIORITY**Sets the priority for a topology**N/A
+TOPOLOGY_SCHEDULER_STRATEGY**The strategy to use when scheduling a topology with Resource Aware Scheduler**N/A
+TOPOLOGY_SHELLBOLT_MAX_PENDING**Max pending tuples in one ShellBolt**N/A
+TOPOLOGY_SKIP_MISSING_KRYO_REGISTRATIONS**Whether or not Storm should skip the loading of kryo registrations for which it does not know the class or have the serializer implementation.**N/A
+TOPOLOGY_SLEEP_SPOUT_WAIT_STRATEGY_TIME_MS**The amount of milliseconds the SleepEmptyEmitStrategy should sleep for.**N/A
+TOPOLOGY_SPOUT_WAIT_STRATEGY**A class that implements a strategy for what to do when a spout needs to wait.**N/A
+TOPOLOGY_SPREAD_COMPONENTS**Array of components that scheduler should try to place on separate hosts.**N/A
+TOPOLOGY_STATE_CHECKPOINT_INTERVAL**Topology configuration to specify the checkpoint interval (in millis) at which the topology state is saved when IStatefulBolt bolts are involved.**N/A
+TOPOLOGY_STATE_PROVIDER**The class name of the StateProvider implementation.**N/A
+TOPOLOGY_STATE_PROVIDER_CONFIG**The configuration specific to the StateProvider implementation.**N/A
+TOPOLOGY_STATE_SYNCHRONIZATION_TIMEOUT_SECS**The maximum amount of time a component gives a source of state to synchronize before it requests synchronization again.**N/A
+TOPOLOGY_STATS_SAMPLE_RATE**The percentage of tuples to sample to produce stats for a task.**N/A
+TOPOLOGY_SUBMITTER_PRINCIPAL**The principal who submitted a topology**N/A
+TOPOLOGY_SUBMITTER_USER**The local user name of the user who submitted a topology.**N/A
+TOPOLOGY_SUBPROCESS_TIMEOUT_SECS**How long a subprocess can go without heartbeating before the ShellSpout/ShellBolt tries to suicide itself.**N/A
+TOPOLOGY_TASKS**How many instances to create for a spout/bolt.**N/A
+TOPOLOGY_TESTING_ALWAYS_TRY_SERIALIZE**Try to serialize all tuples, even for local transfers.**N/A
+TOPOLOGY_TICK_TUPLE_FREQ_SECS**How often a tick tuple from the  _system  component and  _tick  stream should be sent to tasks.**N/A
+TOPOLOGY_TRANSACTIONAL_ID**This config is available for TransactionalSpouts, and contains the id ( a String) for the transactional topology.**N/A
+TOPOLOGY_TRANSFER_BUFFER_SIZE**The size of the Disruptor transfer queue for each worker.**N/A
+TOPOLOGY_TRIDENT_BATCH_EMIT_INTERVAL_MILLIS**How often a batch can be emitted in a Trident topology.**N/A
+TOPOLOGY_TRIDENT_WINDOWING_INMEMORY_CACHE_LIMIT**Maximum number of tuples that can be stored inmemory cache in windowing operators for fast access without fetching them from store.**N/A
+TOPOLOGY_TUPLE_SERIALIZER**The serializer class for ListDelegate (tuple payload).**N/A
+TOPOLOGY_USERS**A list of users that are allowed to interact with the topology.**N/A
+TOPOLOGY_WORKER_CHILDOPTS**Topology-specific options for the worker child process.**N/A
+TOPOLOGY_WORKER_GC_CHILDOPTS**Topology-specific options GC for the worker child process.**N/A
+TOPOLOGY_WORKER_LOGWRITER_CHILDOPTS**Topology-specific options for the logwriter process of a worker.**N/A
+TOPOLOGY_WORKER_MAX_HEAP_SIZE_MB**A per topology config that specifies the maximum amount of memory a worker can use for that specific topology**N/A
+TOPOLOGY_WORKER_METRICS**A map of metric name to class name implementing IMetric that will be created once per worker JVM**N/A
+TOPOLOGY_WORKER_SHARED_THREAD_POOL_SIZE**The size of the shared thread pool for worker tasks to make use of.**N/A
+TOPOLOGY_WORKERS**How many processes should be spawned around the cluster to execute this topology.**N/A
+TRANSACTIONAL_ZOOKEEPER_PORT**The port to use to connect to the transactional zookeeper servers.**N/A
+TRANSACTIONAL_ZOOKEEPER_ROOT**The root directory in ZooKeeper for metadata about TransactionalSpouts.**N/A
+TRANSACTIONAL_ZOOKEEPER_SERVERS**The list of zookeeper servers in which to keep the transactional state.**N/A
+UI_CENTRAL_LOGGING_URL**Storm UI Central Logging URL.**N/A
+UI_CHILDOPTS**Childopts for Storm UI Java process.**N/A
+UI_FILTER**A class implementing javax.servlet.Filter for authenticating/filtering UI requests**N/A
+UI_FILTER_PARAMS**Initialization parameters for the javax.servlet.Filter**N/A
+UI_HEADER_BUFFER_BYTES**The size of the header buffer for the UI in bytes**N/A
+UI_HOST**Storm UI binds to this host/interface.**N/A
+UI_HTTP_CREDS_PLUGIN**Class name of the HTTP credentials plugin for the UI.**N/A
+UI_HTTP_X_FRAME_OPTIONS**Value of X-FRAME-OPTIONS HTTP Header option used by Storm UI.**N/A
+UI_HTTPS_KEY_PASSWORD**Password to the private key in the keystore for setting up HTTPS (SSL).**N/A
+UI_HTTPS_KEYSTORE_PASSWORD**Password to the keystore used by Storm UI for setting up HTTPS (SSL).**N/A
+UI_HTTPS_KEYSTORE_PATH**Path to the keystore used by Storm UI for setting up HTTPS (SSL).**N/A
+UI_HTTPS_KEYSTORE_TYPE**Type of keystore used by Storm UI for setting up HTTPS (SSL).**N/A
+UI_HTTPS_NEED_CLIENT_AUTH**N/A**N/A
+UI_HTTPS_PORT**This port is used by Storm DRPC for receiving HTTPS (SSL) DPRC requests from clients.**N/A
+UI_HTTPS_TRUSTSTORE_PASSWORD**Password to the truststore used by Storm UI setting up HTTPS (SSL).**N/A
+UI_HTTPS_TRUSTSTORE_PATH**Path to the truststore used by Storm UI setting up HTTPS (SSL).**N/A
+UI_HTTPS_TRUSTSTORE_TYPE**Type of truststore used by Storm UI for setting up HTTPS (SSL).**N/A
+UI_HTTPS_WANT_CLIENT_AUTH**Password to the truststore used by Storm DRPC setting up HTTPS (SSL).**N/A
+UI_PAGINATION**Storm UI drop-down pagination value.**N/A
+UI_PORT**Storm UI binds to this port.**N/A
+UI_PROJECT_BUGTRACKER_URL**Storm UI Project BUGTRACKER Link for reporting issue.**N/A
+WORKER_CHILDOPTS**The jvm opts provided to workers launched by this supervisor.**N/A
+WORKER_GC_CHILDOPTS**The jvm opts provided to workers launched by this supervisor for GC.**N/A
+WORKER_HEAP_MEMORY_MB**The default heap memory size in MB per worker, used in the jvm -Xmx opts for launching the worker**N/A
+WORKER_HEARTBEAT_FREQUENCY_SECS**How often this worker should heartbeat to the supervisor.**N/A
+WORKER_LOG_LEVEL_RESET_POLL_SECS**How often a worker should check dynamic log level timeouts for expiration.**N/A
+WORKER_METRICS**A map of metric name to class name implementing IMetric that will be created once per worker JVM**N/A
+WORKER_PROFILER_CHILDOPTS**The jvm profiler opts provided to workers launched by this supervisor.**N/A
+WORKER_PROFILER_COMMAND**The command launched supervisor with worker arguments pid, action and [target_directory] Where action is - start profile, stop profile, jstack, heapdump and kill against pid**N/A
+WORKER_PROFILER_ENABLED**Enable profiling of worker JVMs using Oracles Java Flight Recorder.**N/A
+ZMQ_HWM**Deprecated.**N/A
+ZMQ_LINGER_MILLIS**Deprecated.**N/A
+ZMQ_THREADS**Deprecated.**N/A
